@@ -7,14 +7,12 @@
 </head>
 <body>
     <button onclick="mostrarTxt()">Clique aqui para mostrar o texto</button>
-    <p id="texto"></p>
+    <p id="texto" style="display: none;">Hello World</p>
     <script>
         function mostrarTxt(){
-            document.getElementById("texto").innerHTML = "Olá marcel";   
+            document.getElementById("texto").style.display='block';   
+
         }
-
-
-
     </script>
 
 </body>

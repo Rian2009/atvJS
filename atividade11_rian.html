@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atv11</title>
+</head>
+<body>
+    <button id="btFugitivo">Clique aqui</button>
+
+
+    <script>
+        const botao = document.getElementById('btFugitivo');
+
+        function moverBt(){
+
+            const larguraTela = window.innerWidth;
+            const alturaTela = window.innerHeight;
+
+            const posicaoX = Math.random() * (larguraTela - botao.offsetWidth);
+            const posicaoY = Math.random() * (alturaTela - botao.offsetHeight);
+
+            botao.style.left = `${posicaoX}px`;
+            botao.style.top = `${posicaoY}px`;
+
+            botao.addEventListener('mouseover', moverBotao);
+        }
+    </script>
+</body>
+</html>
