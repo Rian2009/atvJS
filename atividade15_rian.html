@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atv15</title>
+</head>
+<style>
+    #sim {
+        color: #000;
+        font-size: 50px;
+    }
+</style>
+
+<body>
+    <p id="sim">Passe o mouse em cima para mudar de cor</p>
+
+    <script>
+        onmouseover = (event) => {
+            document.style.sim.color = "blue";
+        }
+
+        onmouseout = (event) => {
+            document.style.sim.color = "black";
+        }   
+    </script>
+</body>
+
+</html>

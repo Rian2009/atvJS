@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atv13</title>
+    <style>
+        .quadrado{
+            height: 800px;
+            width: 800px;
+            background-color: #00f;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="quadrado" id="quadrado"></div>
+
+
+    <script>   
+
+        let quadrado = document.getElementById("quadrado");
+        let tamanho = 800;
+
+            document.addEventListener('click', () => {
+                tamanho -= 10;
+
+                quadrado.style.height = tamanho + 'px';
+                quadrado.style.width = tamanho + 'px';
+
+                if (tamanho <= 0) {
+                    quadrado.style.display = "none";
+                    
+            }})
+
+
+    </script>
+</body>
+</html>
