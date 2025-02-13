@@ -7,23 +7,20 @@
     <title>Atv15</title>
 </head>
 <style>
-    #sim {
-        color: #000;
-        font-size: 50px;
-    }
 </style>
 
 <body>
-    <p id="sim">Passe o mouse em cima para mudar de cor</p>
+    <p id="texto" onmouseover="sim()" onmouseout="nao()">Passe o mouse em cima para mudar de cor</p>
 
     <script>
-        onmouseover = (event) => {
-            document.style.sim.color = "blue";
+        function sim() {
+            document.getElementById("texto").style.color = "rgb(255, 0, 0)";
         }
 
-        onmouseout = (event) => {
-            document.style.sim.color = "black";
-        }   
+        function nao() {
+            document.getElementById("texto").style.color = "rgb(0, 0, 255)";
+        }
+
     </script>
 </body>
 

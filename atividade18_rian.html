@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atv18</title>
+</head>
+
+<style>
+</style>
+
+<body>
+    <p>Clique para mudar a fonte</p>
+    <button onclick="mudarFonte()">Cloque aqui para mudar fonte</button>
+
+    <script>
+        function mudarFonte() {
+            let fontes = ["Arial, sans-serif", "'Times New Roman', Times, serif", "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif", "'Courier New', Courier, monospace", "'Brush Script MT', cursive"];
+            let fonte = fontes[Math.floor(Math.random() * fontes.length)];
+            document.body.style.fontFamily = fonte;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atv14</title>
+</head>
+<body>
+
+</style>
+<button onclick="mudarCor()">Clique para mudar a cor de fundo</button>
+
+    <script>
+
+        function mudarCor() {
+            let cores = ["#000", "#fff", "#f00", "#0f0", "#00f", "#fff000"];
+            let cor = cores[Math.floor(Math.random() * cores.length)];
+            document.body.style.backgroundColor = cor;
+        }
+
+    </script>
+</body>
+</html>
