@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atv12</title>
 </head>
+<style>
+    #sim, .texto {
+        padding: 10px;
+        font-size: 30px;
+
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
 <body>
-    <p id="sim">0</p>
-
-    
-
-    <script>   
+    <div class="container">
+        <p class="texto">Número de cliques:</p>
+        <p id="sim">0</p>
+    </div>
+    <script>
         let contador = 0;
 
         document.addEventListener('click', () => {
             contador++
             document.getElementById("sim").innerHTML = contador;
-            })
+        })
     </script>
 </body>
+
 </html>
